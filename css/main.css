@@ -65,9 +65,9 @@ h3{
   /*This example starts at the first column and spans the full width of the defined grid regardless the number of columns defined in your CSS. Cool right? Heck yeah it is!*/
 }
 
-@media all and (max-device-width: 480px){
+@media all and (max-device-width: 768px){
   /*this allow us to change parameters for smaller devices like mobile phone*/
-  /*changes for screens smaller than 480px*/
+  /*changes for screens smaller than 768px*/
   .wrapper {
     grid-template-columns: 1fr;
   }
