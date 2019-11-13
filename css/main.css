@@ -17,7 +17,7 @@ h3{
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
   grid-auto-rows: minmax(6em, auto);
   grid-gap: 1em;
 
@@ -28,21 +28,15 @@ h3{
   margin: 1em auto;
 }
 
-@media all and (min-width: 768px){
-  /*changes for screens bigger than 768px*/
-  .wrapper {
-    /*grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));*/
-  }
-}
-
 .item {
   border: 0.08em solid blue;
+  /* vertical | horizontal */
   padding: 0em 1em;
 }
 
 .content{
   display: grid;
-  grid-template-columns: 5em 1fr;
+  grid-template-columns: auto 1fr;
 }
 
 .date{
@@ -53,6 +47,8 @@ h3{
 
 .description{
   /*border: 1px solid red;*/
+  /* haut | droit | bas | gauche */
+  padding: 0em 0em 0em 2em;
   text-align: justify;
 }
 
@@ -64,4 +60,16 @@ h3{
 
 #contact {
   grid-column: 1 / -1;
+}
+
+@media all and (max-device-width: 480px){
+  /*changes for screens smaller than 480px*/
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .description{
+  /*border: 1px solid red;*/
+  /* haut | droit | bas | gauche */
+  padding: 0em 0em 0em 8em;
+}
 }
