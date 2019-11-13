@@ -30,7 +30,7 @@ h3{
 }
 
 .item {
-  border: 0.08em solid blue;
+  /*border: 0.08em solid blue;*/
   /* vertical | horizontal */
   padding: 0em 1em;
 }
