@@ -61,6 +61,8 @@ h3{
 
 #contact {
   grid-column: 1 / -1;
+  /*There’s this sneaky -1 value that you’ll use frequently to span the full grid container, and it’s all because your grid is one more than the number of columns/rows defined; it really has to do with tracks. This track officially ends at the end of your grid container.*/
+  /*This example starts at the first column and spans the full width of the defined grid regardless the number of columns defined in your CSS. Cool right? Heck yeah it is!*/
 }
 
 @media all and (max-device-width: 480px){
