@@ -28,11 +28,13 @@ h3{
   margin: 1em auto;
 }
 
-@media screen and (min-width: 768px){
+@media all and (min-width: 768px){
+  /*changes for screens bigger than 768px*/
   .wrapper {
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
   }
 }
+
 .item {
   border: 0.08em solid blue;
   padding: 0em 1em;
