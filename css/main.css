@@ -24,7 +24,7 @@ h3{
 
   max-width: 55em;
   background-color: white;
-  border: 0.1em solid red;
+  /*border: 0.1em solid red;*/
   padding: 1em 1em;
   margin: 1em auto;
 }
