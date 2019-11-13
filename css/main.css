@@ -1,3 +1,4 @@
+
 body{
   background-color: lightgrey;
 }
@@ -63,6 +64,7 @@ h3{
 }
 
 @media all and (max-device-width: 480px){
+  /*this allow us to change parameters for smaller devices like mobile phone*/
   /*changes for screens smaller than 480px*/
   .wrapper {
     grid-template-columns: 1fr;
